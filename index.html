@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:image" content="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg">
+    <title>Maitland's Best Pet Sitters</title>
+    <style>
+      body {
+        background-color: #F6EFEA;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #F9D9C9;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #F0B7A4;
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      nav a:hover {
+        background-color: #D6B7A9;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .service {
+        border: 2px solid #D6B7A9;
+        padding: 20px;
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      .service h2 {
+        margin-top: 0;
+      }
+      .service p {
+        margin-bottom: 0;
+      }
+      footer {
+        background-color: #F0B7A4;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg" alt="My image" width="700" height="350">
+      <h1></h1>
+    </header>
+    <nav>
+      <a href="https://cash.app/$mattf94856">Cash App</a>
+      <a href="https://account.venmo.com/u/matt94856">Venmo</a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="service">
+      <h2>Please call or text us before booking at <a href="tel:352-293-6242">352-293-6242</a></h2>
+    <p>Our team is full of young college students who have recently graduated from Winter Park High School and love animals! We are absolutely trustworthy with pets that you consider family and look to sustain strong communication with you. We will provide photos of your pet after each walk and a confirmation photo of a locked door whenever we leave!</p>
+  </div>
+    <br>
+    <h1>Our Services</h1>
+    <div class="service">
+      <h2>Pet Sitting </h2>
+      <p>$42 per NIGHT</p>
+      <p>For a longer term job, one of our experienced pet sitters will stop by your home to feed, play with, and care for <strong>all</strong> of your pets while you're away on vacation! This service includes 2-3 walks and 2-3 feeds per day as well as any basic chores such as watering plants and collecting mail. To reach out for a booking, our contact information can be found on the 'Contact Us' page.</p>
+    </div>
+    <br>
+<div class="service">
+      <h2>Pet Walking</h2>
+      <p>$14.40 per walk</p>
+      <p>If you just need a quick walk, we will take your furry friend for a stroll while you're at work or busy with other activities! Our walks last between 15 - 45 minutes depending on what's right for you pet's activity level.</p>
+    </div>
+        <br>
+    <div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_6677.jpg" alt="christmas dogs" width="550" height="350">
+  <p><em>Libby and Reagan on Christmas</em></p>
+</div>
+<br>
+    <br>
+    <div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/RenderedImage.jpg" alt="christmas dogs" width="600" height="350">
+  <p><em>Deuce chilling on the bed</em></p>
+</div>
+<br>
+    <footer>
+      <p><strong>BOOK BELOW</strong></p>
+      <p>Please select your desired service and duration <u>before</u> proceeding to payment. The menu next to the services option indicates the duration of service you need. For instance, if you select Pet Sitting and enter "2" in the quantity field, it means you need Pet Sitting service for 2 days and you will be charged for the price of 2 days.</p>
+      <br>
+<div id="smart-button-container">
+  <div style="text-align: center;">
+    <div style="margin-bottom: 1.25rem;">
+      <p></p>
+      <select id="item-options">
+        <option value="Pet Sitting" price="35">Pet Sitting - 42 USD</option>
+        <option value="Pet Walking" price="12">Pet Walking - 14.40 USD</option>
+      </select>
+      <input type="number" id="quantityInput" min="1" value="1">
+    </div>
+    <div id="paypal-button-container"></div>
+  </div>
+</div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AVjo-qOiMh1Qc5up1QiTLOQJkZqN7H8KmJojTOTUL6IqMkoMXcj_uou2BMevCrJIVISzVtgshl89DPva&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+<script>
+  function initPayPalButton() {
+    var itemOptions = document.querySelector("#smart-button-container #item-options");
+    var quantityInput = document.querySelector("#smart-button-container #quantityInput");
+    var shipping = 0;
+    var orderDescription = '';
+
+    if (orderDescription === '') {
+      orderDescription = 'Item';
+    }
+
+    paypal.Buttons({
+      style: {
+        shape: 'pill',
+        color: 'black',
+        layout: 'vertical',
+        label: 'paypal',
+      },
+      createOrder: function(data, actions) {
+        var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+        var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+        var quantity = parseInt(quantityInput.value);
+
+        var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+        var tax = (20 === 0 || false) ? 0 : (itemTotalValue * (parseFloat(20) / 100));
+        tax = Math.round(tax * 100) / 100;
+        var priceTotal = itemTotalValue + parseFloat(shipping) + tax;
+        priceTotal = Math.round(priceTotal * 100) / 100;
+
+        return actions.order.create({
+          purchase_units: [{
+            description: orderDescription,
+            amount: {
+              currency_code: 'USD',
+              value: priceTotal,
+              breakdown: {
+                item_total: {
+                  currency_code: 'USD',
+                  value: itemTotalValue,
+                },
+                shipping: {
+                  currency_code: 'USD',
+                  value: shipping,
+                },
+                tax_total: {
+                  currency_code: 'USD',
+                  value: tax,
+                },
+              },
+            },
+            items: [{
+              name: selectedItemDescription,
+              unit_amount: {
+                currency_code: 'USD',
+                value: selectedItemPrice,
+              },
+              quantity: quantity,
+            }],
+          }],
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(orderData) {
+          // Full available details
+          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+          // Get the selected item description and price
+          var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+          var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+
+          // Get the quantity and calculate the total price
+          var quantity = parseInt(quantityInput.value);
+          var totalPrice = selectedItemPrice * quantity;
+
+          // Show a success message within this page, e.g.
+          const element = document.getElementById('paypal-button-container');
+          element.innerHTML = '';
+          element.innerHTML = '<h3>Thank you for your payment! Please contact <a href="tel:352-293-6242">352-293-6242</a> to confirm dates and times, as well as a street address! This number can also be found on the "Contact Us" page.</h3>';
+  });
+},
+
+      onError: function(err) {
+        console.log(err);
+      },
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+  </script>
+      <p>© 2023 Maitland's Best Pet Sitters. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
