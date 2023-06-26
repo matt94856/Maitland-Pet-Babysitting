@@ -1,0 +1,207 @@
+    <html>
+    <head>
+    	<meta charset="UTF-8">
+    <meta property="og:title" content="Maitland's Best Pet Marketplace | Pet Products">
+    <meta name="description" content="Get high-quality, affordable pet sitting and pet walking services in Maitland, Florida. Our experienced pet staff offers personalized attention and care for your furry family members. We guarantee satisfaction with every visit!">
+    <meta property="og:image" content="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg"alt="Pet sitters in Maitland, Florida">
+    <meta itemprop="image" content="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg">
+    <meta property="og:url" content="https://maitlandsbestpetsitters.com/marketplace">
+    	<title>Maitland's Best Pet Marketplace | Pet Products</title>
+    <style>
+      /* Global Styles */
+      body {
+        background-color: #f6efea;
+        font-family: Arial, sans-serif;
+      }
+
+     header {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: #444;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+  }
+      nav {
+        background-color: #F0B7A4;
+        overflow: hidden;
+      }
+     nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  background-color: #D6B7A9;
+}
+
+/* Center and style main heading */
+  h1 {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 2rem;
+    color: #444;
+    
+    background-color: #F0B7A4;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+      /* Product Container Styles */
+      .product-container {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Slideshow Styles */
+      .slideshow-container {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .slideshow {
+        display: flex;
+        overflow: hidden;
+      }
+
+      .slideshow img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+
+      /* Product Description Styles */
+      .product-description {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #444;
+        margin-bottom: 20px;
+      }
+
+      /* Buy Now Button Styles */
+      .buy-now-button {
+        display: flex;
+        justify-content: center;
+      }
+
+      .buy-now-button a {
+        background-color: #f0ad4e;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <header>Pet Marketplace</header>
+  <br><br>
+  <nav>
+  	<a href="index.html"><img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg" alt="Maitland's Best Pet Sitters Logo"width="200"height="80"></a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  <body>
+  	<h1>Welcome to Maitland's Best Pet Marketplace! We hope that some of these products can be fun and useful to you and your pets! By purchasing any of our products, you not only receive top-quality items but also support us in our mission. Each purchase contributes to our continued efforts, and we truly appreciate your support. Happy shopping and thank you for being a part of our journey!</h1>
+    <div class="product-container">
+      <div class="slideshow-container">
+        <div class="slideshow">
+          <img
+            src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/Shed%20product%201.png"
+            alt="Dog Shed Shampoo"
+            class="slide"
+          />
+          <img
+            src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/Shed%20product%202.png"
+            alt="Dog Shampoo in Maitland, Florida"
+            class="slide"
+          />
+          <img
+            src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/Shed%20product%203.png"
+            alt="Maitland's Best Pet Marketplace"
+            class="slide"
+          />
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+
+      <p class="product-description">
+        Give your pets a healthy coat and skin with the WAHL Shed Control Pet
+        Shampoo. Formulated with Lemongrass, Sage, Oatmeal, and Aloe, this 24 oz
+        shampoo helps reduce shedding and dander. It nourishes and moisturizes
+        your pet's coat, leaving it shiny and soft. Perfect for maintaining a
+        healthy and clean coat for your beloved furry friend.
+      </p>
+
+      <div class="buy-now-button">
+        <a
+          target="_blank"
+          href="https://www.amazon.com/dp/B005CUU0GM?_encoding=UTF8&linkCode=ib1&tag=matt94856-20&linkId=b1881993dda890799fc20b93ce5e2b7b&ref_=ihub_eag-hg-asin_B005CUU0GM"
+        >
+          Buy Now
+        </a>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      var slides = document.getElementsByClassName("slide");
+
+      showSlide(slideIndex);
+
+      function changeSlide(n) {
+        showSlide((slideIndex += n));
+      }
+
+      function showSlide(n) {
+        if (n >= slides.length) {
+          slideIndex = 0;
+        } else if (n < 0) {
+          slideIndex = slides.length - 1;
+        }
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
