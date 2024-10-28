@@ -317,6 +317,13 @@ img {
     max-width: 100%; /* Ensures the image does not exceed the container width */
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Prevents bottom whitespace */
+    margin: 0 auto; /* Center image horizontally */
+}
+
+/* Center the container of images */
+.image-container {
+    text-align: center; /* Center align text for images */
+    margin: 20px 0; /* Optional: Adds space above and below the container */
 }
 
 /* Optional: Add padding to the main content for smaller screens */
