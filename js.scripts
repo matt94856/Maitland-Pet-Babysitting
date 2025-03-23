@@ -1,0 +1,37 @@
+// Smooth Scroll for Service Buttons
+document.querySelectorAll('.button').forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        document.querySelector(href).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Fade-In Animation for Elements on Scroll
+window.addEventListener('scroll', function () {
+    const elements = document.querySelectorAll('.service, .review-box');
+    const windowHeight = window.innerHeight;
+    elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }
+    });
+});
+
+// Dropdown Menu Animation
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.addEventListener('mouseover', () => {
+        const content = dropdown.querySelector('.dropdown-content');
+        content.style.display = 'block';
+        content.style.animation = 'fadeIn 0.3s ease forwards';
+    });
+    dropdown.addEventListener('mouseleave', () => {
+        const content = dropdown.querySelector('.dropdown-content');
+        content.style.animation = 'fadeOut 0.3s ease forwards';
+        setTimeout(() => content.style.display = 'none', 300);
+    });
+});

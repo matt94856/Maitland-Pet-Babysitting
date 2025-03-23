@@ -15,68 +15,134 @@
     <meta name="description" content="Get high-quality, affordable pet sitting and pet walking services in Maitland, Florida. Our experienced pet staff offers personalized attention and care for your furry family members. We guarantee satisfaction with every visit!">
     <meta name="keywords" content="pet sitter, pet walker, dog walker, pet care, pet services, dog sitting, pet sitting, Maitland, Florida">
     <meta name="author" content="Maitland's Best Pet Sitters">
-    <meta property="og:image" content="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg" alt="Pet sitters in Maitland, Florida">
+    <meta property="og:image" content="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg">
     <meta itemprop="image" content="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg">
     <meta property="og:url" content="https://maitlandsbestpetsitters.com">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <title>Pet Service in FL | Maitland's Best Pet Sitters</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg" alt="My image" width="700" height="350">
+        <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg" alt="Maitland's Best Pet Sitters" class="hero-image">
+        <h1>Maitland's Best Pet Sitters</h1>
+        <p class="tagline">Professional, Reliable, and Loving Pet Care Services</p>
     </header>
     
     <nav>
-        <a href="https://account.venmo.com/u/maitlandsbestpetsitters">Venmo</a>
-        <a href="aboutus.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="#services"><i class="fas fa-paw"></i> Services</a>
+        <a href="AboutUs.html"><i class="fas fa-user-friends"></i> About</a>
+        <a href="#testimonials"><i class="fas fa-star"></i> Reviews</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="https://account.venmo.com/u/maitlandsbestpetsitters" class="cta-button"><i class="fas fa-credit-card"></i> Pay Now</a>
     </nav>
 
     <main>
-        <section id="services">
-            <br>
-            <h2 style="text-align: center;">Pet Services</h2>
-            <article class="service">
-                <h3>Pet Sitting</h3>
-                <p><strong>Price:</strong> $45 per NIGHT</p>
-                <p>For longer-term jobs, our experienced pet sitters will stop by your home to feed, play with, and care for <strong>all</strong> your pets while you're away on vacation! This service includes 2-3 walks and 2-3 feeds per day, as well as basic chores such as watering plants and collecting mail. After making an inquiry, we'll contact you to see if you'd like to proceed with a booking.</p>
-                <button class="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe6ddRTUveyqlnRAvklnCAZT_0zXYdw0Erx_GLnmKxrpFZghQ/viewform?usp=sf_link'">Make an Inquiry</button>
-            </article>
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <article class="service">
+                    <i class="fas fa-home fa-3x"></i>
+                    <h3>Pet Sitting</h3>
+                    <p class="price">$45 per night</p>
+                    <ul class="service-features">
+                        <li>2-3 daily walks</li>
+                        <li>2-3 feeds per day</li>
+                        <li>Plant watering</li>
+                        <li>Mail collection</li>
+                        <li>Photo updates</li>
+                    </ul>
+                    <button class="button book-now" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe6ddRTUveyqlnRAvklnCAZT_0zXYdw0Erx_GLnmKxrpFZghQ/viewform?usp=sf_link'">
+                        <i class="fas fa-calendar-check"></i> Book Now
+                    </button>
+                </article>
 
-            <article class="service">
-                <h3>Pet Walking</h3>
-                <p><strong>Price:</strong> $18 per walk</p>
-                <p>If you just need a quick walk, we will take your furry friend for a stroll while you're at work or busy with other activities! Our walks last between 15 - 45 minutes, depending on what's suitable for your pet's activity level.</p>
-                <button class="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSejH7-1ZrwBnbY4EX9gMfzTlBoqlTQCJ3LjBObFy9u6K6VDeA/viewform?usp=sf_link'">Make an Inquiry</button>
-            </article>
-
-            <div style="text-align: center;">
-                <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/dogs2.JPG" alt="dog sitting in Maitland, Florida" width="450" height="350">
-                <p><em>Bailey is tired</em></p>
+                <article class="service">
+                    <i class="fas fa-walking fa-3x"></i>
+                    <h3>Pet Walking</h3>
+                    <p class="price">$18 per walk</p>
+                    <ul class="service-features">
+                        <li>15-45 minute walks</li>
+                        <li>Flexible scheduling</li>
+                        <li>Individual attention</li>
+                        <li>Exercise & play</li>
+                        <li>GPS tracked walks</li>
+                    </ul>
+                    <button class="button book-now" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSejH7-1ZrwBnbY4EX9gMfzTlBoqlTQCJ3LjBObFy9u6K6VDeA/viewform?usp=sf_link'">
+                        <i class="fas fa-calendar-check"></i> Book Now
+                    </button>
+                </article>
             </div>
         </section>
 
-        <section class="review-section">
-            <h2>Pet Service Reviews</h2>
-            <div class="review" onclick="window.location.href='https://www.yelp.com/biz/maitlands-best-pet-sitters-maitland'">
-                <h3>We're on Yelp</h3>
-                <p>If you enjoyed our services or would like to leave feedback, feel free to <strong>CLICK HERE</strong> and leave us a review. If you're still unsure of our services, check our reviews to guarantee our professionalism, reliability, and care!</p>
+        <section id="about" class="about-section">
+            <h2>About Our Team</h2>
+            <p class="team-intro">We're a dedicated team of college students who are passionate about pets! Our love for animals drives us to provide the best possible care for your furry family members.</p>
+            <div class="team-features">
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h4>Passionate Care</h4>
+                    <p>We treat every pet as if they were our own</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h4>Reliable Service</h4>
+                    <p>Punctual and dependable pet care</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-camera"></i>
+                    <h4>Photo Updates</h4>
+                    <p>Regular updates of your pet's activities</p>
+                </div>
             </div>
         </section>
-            <div style="text-align: center;">
-                <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/dogs.jpg" alt="Pet walking and pet sitting services" width="450" height="350">
-                <p><em>Hatcher loves frisbee</em></p>
+
+        <section id="testimonials" class="review-section">
+            <h2>What Pet Parents Say</h2>
+            <div class="testimonials-grid">
+                <div class="review" onclick="window.location.href='https://www.yelp.com/biz/maitlands-best-pet-sitters-maitland'">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Check out our reviews on Yelp to see why pet parents trust us with their beloved companions!</p>
+                    <img src="Yelp QR.png" alt="Yelp QR Code" class="qr-code">
+                </div>
             </div>
-            <article class="service">
-                <h3 style="text-align: center;">Make an Inquiry to See if We're Right for You!</h3>
-                <p>Our team is composed of young college students who love animals! We are trustworthy with pets that you consider family and strive for strong communication with you. For our pet sitting service, we provide photos of your pet after each walk and/or a confirmation photo of a locked door upon your request!</p>
-            </article>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Book?</h2>
+            <p>Contact us today to schedule a meet and greet!</p>
+            <button class="button cta-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe6ddRTUveyqlnRAvklnCAZT_0zXYdw0Erx_GLnmKxrpFZghQ/viewform?usp=sf_link'">
+                <i class="fas fa-paw"></i> Get Started
+            </button>
+        </section>
     </main>
 
     <footer>
-        <p>© 2023 Maitland's Best Pet Sitters. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Maitland, FL</p>
+                <p><i class="fas fa-envelope"></i> Contact through our form</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#testimonials">Reviews</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.yelp.com/biz/maitlands-best-pet-sitters-maitland" target="_blank"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Maitland's Best Pet Sitters. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js" defer></script>
