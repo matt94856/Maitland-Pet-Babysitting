@@ -14,34 +14,90 @@
     <meta name="description" content="Get in contact with a high-quality, affordable pet sitter in Maitland, Florida. Make an inquiry or feel free to call, email, or text us!">
     <title>Contact Us - Maitland's Best Pet Sitters</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg" alt="Maitland's Best Pet Sitters Logo" width="250" height="150">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/matt94856/Maitland-Pet-Babysitting/main/IMG_7385.jpg" alt="Maitland's Best Pet Sitters" class="logo">
+            </a>
+        </div>
         <h1>Contact Us</h1>
-        <section class="contact-info">
-            <h2>Connect with Us</h2>
-            <ul>
-                <li>Instagram: <a href="https://www.instagram.com/maitlandsbestpetsitters/" target="_blank" rel="noopener noreferrer">@maitlandsbestpetsitters</a></li>
-                <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100095192749961" target="_blank" rel="noopener noreferrer">Maitland's Best Pet Sitters</a></li>
-            </ul>
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="AboutUs.html"><i class="fas fa-user-friends"></i> About</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="https://account.venmo.com/u/maitlandsbestpetsitters" class="cta-button"><i class="fas fa-credit-card"></i> Pay Now</a>
+    </nav>
+
+    <main class="contact-page">
+        <div class="contact-container">
+            <section class="contact-info-section">
+                <h2>Get in Touch</h2>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fab fa-instagram"></i>
+                        <h3>Instagram</h3>
+                        <p><a href="https://www.instagram.com/maitlandsbestpetsitters/" target="_blank" rel="noopener noreferrer">@maitlandsbestpetsitters</a></p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fab fa-facebook"></i>
+                        <h3>Facebook</h3>
+                        <p><a href="https://www.facebook.com/profile.php?id=100095192749961" target="_blank" rel="noopener noreferrer">Maitland's Best Pet Sitters</a></p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fab fa-yelp"></i>
+                        <h3>Yelp</h3>
+                        <p><a href="https://www.yelp.com/biz/maitlands-best-pet-sitters-maitland" target="_blank" rel="noopener noreferrer">Review us on Yelp</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-image-section">
+                <img src="https://github.com/matt94856/Maitland-Pet-Babysitting/blob/main/dogs.jpg?raw=true" alt="Happy dogs with our pet sitters" class="contact-image">
+            </section>
+        </div>
+
+        <section class="cta-section">
+            <h2>Ready to Book?</h2>
+            <p>Contact us today to schedule a meet and greet!</p>
+            <button class="button cta-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSe6ddRTUveyqlnRAvklnCAZT_0zXYdw0Erx_GLnmKxrpFZghQ/viewform?usp=sf_link'">
+                <i class="fas fa-paw"></i> Get Started
+            </button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Maitland's Best Pet Sitters. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Maitland, FL</p>
+                <p><i class="fas fa-envelope"></i> Contact through our form</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.yelp.com/biz/maitlands-best-pet-sitters-maitland" target="_blank"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Maitland's Best Pet Sitters. All rights reserved.</p>
+        </div>
     </footer>
-    
+
     <script src="scripts.js" defer></script>
 </body>
 </html>
